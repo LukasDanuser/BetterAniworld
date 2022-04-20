@@ -1,0 +1,31 @@
+{
+    "name": "BetterAniworld",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Better Aniworld",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.aniworld.to/*"
+            ],
+            "js": [
+                "main.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "action": {
+        "default_title": "BetterAniworld",
+        "default_popup": "html/popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "webRequest",
+        "tabs",
+        "storage"
+    ]
+}

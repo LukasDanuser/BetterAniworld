@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="options" class="yt_hide">
+            <ul>
+
+                <li> <input type="checkbox" name="autoPlay" id="autoPlay" class="check"> <label
+                        for="autoPlay">Automatically play new episode</label> </li>
+            </ul>
+            <ul>
+                <li> <input type="checkbox" name="preferredHoster" id="preferredHoster" class="check"> <label
+                        for="preferredHoster">Set preferred hoster</label> </li>
+                <li class="suboption">
+                    <div style="margin: 0 auto; text-align: left; width: 230px;">
+                        <div style="display: inline-block; width: 150px;">Hoster:</div>
+                        <select id="quality">
+                            <option value="voe">VOE</option>
+                            <option value="doodstream">Doodstream</option>
+                            <option value="streamtape">Streamtape</option>
+                            <option value="vidoza">Vidoza</option>
+
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li> <input type="checkbox" name="preferredLanguage" id="preferredLanguage" class="check"> <label
+                        for="preferredLanguage">Set preferred language</label> </li>
+                <li class="suboption">
+                    <div style="margin: 0 auto; text-align: left; width: 230px;">
+                        <div style="display: inline-block; width: 150px;">Language:</div>
+                        <select id="quality">
+                            <option value="ger">German</option>
+                            <option value="japGER">Japanese, german subs</option>
+                            <option value="japENG">Japanese, english subs</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/popup.js" charset="utf-8"></script>
+    <script src="../js/popupSettings.js" charset="utf-8"></script>
+
+</body>
+
+</html>
